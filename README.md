@@ -1,3 +1,0 @@
-# Truco
-# Truco
-# Truco
