@@ -23,8 +23,19 @@ public class Main {
 
         Player player1 = new Player("");
         Player player2 = new Player("");
+        int Mano;
+
+        int round = 0;
 
         while (player1.getScore() < 30 && player2.getScore() < 30){
+
+            round++;
+            if (round % 2 != 0){
+                Mano = 1;
+            }else
+                Mano = 2;
+
+
             if (player1.getScore() != 0 && player2.getScore() != 0) {
                 for (Carta carta : player1.getCartas()) {
                     mazo.devolverCarta(carta);
@@ -33,8 +44,8 @@ public class Main {
                     mazo.devolverCarta(carta);
                 }
             }
-            player1.setCarta(new ArrayList<>());
-            player2.setCarta(new ArrayList<>());
+            player1.setCartas(new ArrayList<>());
+            player2.setCartas(new ArrayList<>());
 
             for (int i = 0; i < 3; i++) {
                 player1.addCarta(mazo.getRamdomCard());

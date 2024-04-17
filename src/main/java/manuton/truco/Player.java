@@ -31,11 +31,11 @@ public class Player {
         return carta;
     }
 
-    public void setCarta(List<Carta> carta){
+    public void setCartas(List<Carta> carta){
         this.carta = carta;
     }
 
-    public void setCarta (Carta carta, int index){
+    public void setCartas (Carta carta, int index){
         this.carta.set(index, carta);
     }
 
