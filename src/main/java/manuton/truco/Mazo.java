@@ -27,6 +27,9 @@ public class Mazo{
         // System.out.println();
 
         this.cartas = setValores(mazo, juego);
+    }
+
+    public Mazo(List<Carta> cartas){
         this.cartas = cartas;
     }
 
@@ -77,6 +80,10 @@ public class Mazo{
 
     public Mazo getMazo(){
         return this;
+    }
+
+    public List<Carta> getCartas(){
+        return cartas;
     }
 
     public Mazo setMazo(List<Carta> cartas){
