@@ -57,7 +57,6 @@ public class Main {
             }
 
 
-
             System.out.println("Jugador 1");
             //for (Carta carta : player1.getCartas())
             //    System.out.println("Carta: " + carta.getName());
@@ -122,5 +121,18 @@ public class Main {
         for (int i = 0; i < largo; i++)
             System.out.print("¯");
         System.out.println(" ");
+    }
+    
+    public static void imprimirCambioJugador(Player jugador, int ronda){
+        clearConsole();
+        System.out.println("Ronda: " + ronda);
+        System.out.println("Jugador: " + jugador.getName());
+        System.out.println("Aprete enter para continuar: ");
+    }
+
+    public static void clearConsole() {
+        for (int i = 0; i < 50; ++i) {
+            System.out.println();
+        }
     }
 }
